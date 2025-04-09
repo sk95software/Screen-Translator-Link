@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting...</title>
+  <script>
+    // Define your iCloud Shortcut ID
+    const shortcutId = 'cc6aac79cbe44e49bb2c753ba2e33129';
+
+    // Construct the full iCloud Shortcut URL
+    const redirectUrl = `https://www.icloud.com/shortcuts/${shortcutId}`;
+
+    // Perform the redirection
+    window.location.href = redirectUrl;
+  </script>
+</head>
+<body>
+  <p>Redirecting to the shortcut page... If you are not redirected automatically, <a id="redirect-link" href="#">click here</a>.</p>
+  <script>
+    // Set the href attribute of the fallback link
+    document.getElementById('redirect-link').href = redirectUrl;
+  </script>
+</body>
+</html>
